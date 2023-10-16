@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phone hunter api</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-center text-3xl">Welcome To Hunting Phone</h1>
+
+    </header>
+    <main class="container mx-auto mt-8">
+        <section class="bg-gray-100 p-4 m-4">
+            <input id="search-field" type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+            <button class="btn btn-active btn-accent" onclick="handleSearch( )"  >search</button>
+            <!-- ...... -->
+            <input id="search-field2" type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+            <button onclick="handleSearch2()" class="btn btn-active btn-primary">search</button>
+        </section>
+        <!-- loder -->
+
+        <!-- search  -->
+        <section>
+            <div class="text-center my-40 hidden">
+                <span class="loading loading-dots loading-md" id="loading-spinner"></span>
+
+            </div>
+            <div id="phone-container" class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">   
+            </div>
+            <!-- show all -->
+            <div class="container hidden" id="show-all-container">
+                <button class="btn btn-active btn-primary">show all</button>
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    
+
+
+
+
+
+
+    <script src="js/phone.js"></script>
+</body>
+</html>
